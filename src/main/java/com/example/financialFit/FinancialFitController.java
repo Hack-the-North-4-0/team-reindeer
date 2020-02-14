@@ -10,10 +10,10 @@ package com.example.financialFit;
 @Controller
 public class FinancialFitController {
 
-    @RequestMapping("/homepage")
-    public String homepage() {
+    @RequestMapping("/app")
+    public String app() {
        // model.addAttribute("name", name);
-        return "homepage";
+        return "app";
     }
 
     @RequestMapping("/aspiration")
