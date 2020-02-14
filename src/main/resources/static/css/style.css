@@ -1,0 +1,50 @@
+
+img {
+    display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            border-radius: 70%;
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 320%;
+}
+
+.btn {
+    align-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote {
+    grid-area: quote1;
+}
+
+.quote2 {
+    grid-area: quote1;
+}
+
+blockquote {
+    padding: 20px 27px;
+    border-radius: 6px;
+    background-color: chocolate;
+    color: darkred;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 30%;
+    min-width: 300px;
+    max-width: 320px;
+    float: right;
+    padding: 25px 30px;
+    border: 1px solid;
+    margin: 0px 20% 0px 0px;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px;
+    background-color: #fdfdfd;
+}
