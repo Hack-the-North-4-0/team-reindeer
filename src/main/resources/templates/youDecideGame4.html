@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+         background-color: burlywood;
+         padding-top: 14px;
+         text-align: center;
+         position: fixed;
+         width: 100%;
+         z-index: 99;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+    position: relative;
+    top: -20px;
+    left: 1200px;
+    width: 50px;
+}
+
+p {
+    color: brown;
+}
+
+</style>
+</head>
+<body>
+    <form action="/action_page.php">
+        <p>Your car is due it's MOT you have not saved all year</p>
+        <p>The bill is £300.</p>
+        <p>What do you do?</p>
+        <input type="radio" onclick="myFunction('shoes', 'selfRepair')" id="male" name="gender" value="male">
+        <label for="male">Buy shoes you want</label><br>
+        <input type="radio" onclick="hideAll('shoes', 'selfRepair')" id="female" name="gender" value="female">
+        <label for="female">Fix car</label><br>
+        <input type="radio" onclick="myFunction('selfRepair', 'shoes')" id="other" name="gender" value="other">
+        <label for="other">Fix car yourself</label>
+        </form>
+</body>
+
+<div id="shoes" style= "display:none;" >
+
+    <p>You have no car for work, you need to pay for public transport</p>
+
+</div>
+
+<div id="selfRepair" style= "display:none;" >
+
+    <p>Get a friend to fix your car and use the money to buy shoes. Car could break later</p>
+
+</div>
+
+<script>
+function myFunction(div, div2) {
+  var x = document.getElementById(div);
+  var y = document.getElementById(div2)
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  y.style.display = "none";
+}
+function hideAll(div, div2) {
+  var x = document.getElementById(div);
+  var y = document.getElementById(div2)
+  x.style.display = "none";
+  y.style.display = "none";
+}
+</script>
+<footer>
+    <a href="/you-decide-game5">next</a>
+</footer>
+</html>

@@ -46,4 +46,16 @@ public class FinancialFitController {
         return "youDecideGame3";
     }
 
+    @RequestMapping("/you-decide-game4")
+    public String youDecideGame4() {
+        // model.addAttribute("name", name);
+        return "youDecideGame4";
+    }
+
+    @RequestMapping("/you-decide-game5")
+    public String youDecideGame5() {
+        // model.addAttribute("name", name);
+        return "youDecideGame5";
+    }
+
 }

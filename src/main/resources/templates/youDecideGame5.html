@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+         background-color: burlywood;
+         padding-top: 14px;
+         text-align: center;
+         position: fixed;
+         width: 100%;
+         z-index: 99;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+    position: relative;
+    top: -20px;
+    left: 1200px;
+    width: 50px;
+}
+
+p {
+    color: brown;
+}
+
+</style>
+</head>
+<body>
+    <form action="/action_page.php">
+        <p>Your cat falls ill and you need to pay vets bill</p>
+
+        <input type="radio" onclick="clearAll()" id="male" name="gender" value="male">
+        <label for="male">Pay vets bill</label><br>
+        <input type="radio" onclick="myFunction()" id="female" name="gender" value="female">
+        <label for="female">Do not take cat to vets</label><br>
+
+        </form>
+</body>
+
+<div id="catDies" style= "display:none;" >
+
+    <p>Unfortunately your pet dies</p>
+
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("catDies");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+}
+
+function clearAll() {
+ var x = document.getElementById("catDies");
+ x.style.display = "none";
+}
+
+</script>
+<footer>
+    <a href="/you-decide-game5">next</a>
+</footer>
+</html>
